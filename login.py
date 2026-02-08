@@ -24,7 +24,7 @@ def signin():
     elif username !="Admin" or code != "1234":
         messagebox.showerror("Invalid", "Invalid Username and Password")
 
-img = PhotoImage(file="assets/images/login.png")
+img = PhotoImage(file="login.png")
 Label(root, image=img, bg="White").place(x=50,y=50)
 
 frame = Frame(root,width=350, height=350, bg="White")
@@ -72,5 +72,6 @@ label=Label(frame, text="Don't have an account?", fg="Black",bg="White",font=("S
 label.place(x=75,y=270)
 sign_up = Button(frame, width=6, text="Sign Up", border=0, bg="White", cursor="hand2", fg="#57a1f8")
 sign_up.place(x=217,y=270)
+
 
 root.mainloop()
